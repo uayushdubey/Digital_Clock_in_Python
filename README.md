@@ -1,24 +1,3 @@
 # Digital_Clock_in_Python
-#hey it' all about digital clock in python
+hey it' all about digital clock in python
 
-import time
-from tkinter import *
-
-clock = Tk()
-clock.geometry("300x200")
-clock.title("Clock by Ayush")
-clock.resizable(1, 1)
-
-label = Label(clock, font=('Helvetica', 30, 'bold'), bg='black', fg='gold', bd=30)
-
-label.pack(fill='both')
-
-
-def cl():
-    text_1 = time.strftime('%H: %M:%S')
-    label.config(text=text_1)
-    label.after(200, cl)
-
-
-cl()
-clock.mainloop()
